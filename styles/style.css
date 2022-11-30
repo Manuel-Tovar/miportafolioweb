@@ -317,7 +317,6 @@ button:active {
 }
 /* CARD */
 .card {
-    height: 50%;
     width: 50%;
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -329,8 +328,10 @@ button:active {
     display: flex;
     justify-content: space-around;
     width: 100%;
+
     background-color: var(--background1);   
 }
+
 .title-studies, .project-studies, .tecnology-studies {
     background-color: var(--colortext2);
     text-align: center;
@@ -341,6 +342,7 @@ button:active {
     justify-content: center;
     box-shadow: 0 0 20px 8px var(--colortext2);
 }
+
 /* ANIMATION STUDIES */
 .spinner {
     height: 50px;
@@ -407,7 +409,7 @@ button:active {
     position: relative;
     transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
     background: var(--background2);
-    background: linear-gradient(to top, var(--colortext1) , #4286f4);
+    background: linear-gradient(to top, var(--background1) , #4286f4);
 }
 
    /*Description */
@@ -593,13 +595,13 @@ button:active {
    .my-information .my-information-text h2 {
     justify-content: center;
     font-size: 3rem;
-    color: var(--colortext);
+    color: var(--colortext2);
     
  }
    .my-information .my-information-text p {
     justify-content: center;
     font-size: 2rem;
-    color: var(--colortext);
+    color: var(--colortext1);
     margin: 50px;
     
 }
