@@ -40,7 +40,7 @@ arraysStudy.forEach((prints) => {
     toPrint = `
     
     <div class="card">
-    <a href="https://drive.google.com/file/d/1fModQkKT1lvgxIxhoqjPxFQCJcHL8fYb/view?usp=sharing" target="_blank" ><div class="card-image"><img src=${prints.photo} alt="card" width="100%" height="100%" >
+    <a href= ${prints.link} target="_blank" ><div class="card-image"><img src=${prints.photo} alt="card" width="100%" height="100%" >
     </div></a>
         <div class="card-description">
             <p class="text-title"> ${prints.title}</p>
