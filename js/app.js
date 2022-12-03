@@ -23,7 +23,7 @@ let certificadoReact = new Study ("Certificado por Sololearn", "He recibido este
 
 let certificadoSoporteTecnico = new Study ("Certificado por Google", "He recibido este certificado de Fundamentos de Soporte Tecnico por parte de la empresa Google, gracias a la institucion Coursera, realizando 4 semanas de estudio.", "/images/technical-support.jpg", "https://drive.google.com/file/d/11VOdFEsfYQ2LpAAaFgc5HoaSnA-smURr/view?usp=sharing");
 
-let certificadoMichiganSql = new Study ("Certificado por Michigan", "He recibido este certificado de Lenguaje de Consulta Estructurado por parte de la Univercidad de Michigan, gracias a la institucion Coursera, realizando 6 semanas de estudio.", "./images/sql-michigan.jpg", "https://drive.google.com/file/d/1_KLbr_C1ZnLtjzIpOCu2tu4PCc4c1XvQ/view?usp=sharing");
+let certificadoMichiganSql = new Study ("Certificado por Michigan", "He recibido este certificado de Lenguaje de Consulta Estructurado por parte de la Univercidad de Michigan, gracias a la institucion Coursera, realizando 6 semanas de estudio.", "/images/sql-michigan.jpg", "https://drive.google.com/file/d/1_KLbr_C1ZnLtjzIpOCu2tu4PCc4c1XvQ/view?usp=sharing");
 
 let certificadoScrum = new Study ("Certificado por CertiProf", "He recibido este certificado de Scrum gracias a la institucion CertiProf, realizando 2 horas de estudio.", "./images/scrum-foundation.jpg", "https://drive.google.com/file/d/1ZrhrWskLyowZqd5le66unYTDW_Qg2gT9/view?usp=sharing");
 
