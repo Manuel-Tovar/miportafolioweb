@@ -317,16 +317,19 @@ button:active {
 }
 /* CARD */
 .card {
-    width: 50%;
+    
     position: relative;
     transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     border-radius: 1em;
     box-shadow: 0 0 20px 8px var(--colortext2);
     margin: 50px;
    }
-   .studies {
-    display: flex;
-    justify-content: space-around;
+   #studies {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
 
     background-color: var(--background1);   
@@ -389,19 +392,7 @@ button:active {
      transform: translateY(-10px);
     }
 }
-   /* STUDIES  */
- .studies-two {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: var(--background1);   
-}
- .studies-three {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: var(--background1);   
-}
+
     /*Image*/
    .card-image {
     height: 100%;
@@ -675,25 +666,19 @@ button:active {
 
 @media screen and (max-width: 800px) {
 
-    .studies, .studies-two, .studies-three {
+    #studies {
         display: flex;
         flex-direction: column;
     }
-    .studies .card, .studies-two .card, .studies-three .card {
+    #studies .card {
         width: 100%;
         margin: 0;
     }
 
-    .studies .card-description {
+    #studies .card-description {
         font-size: 0.7rem;
     }
 
-    .studies-two .card-description {
-        font-size: 0.7rem;
-    }
-    .studies-three .card-description {
-        font-size: 0.7rem;
-    }
      .text-body {
         display: none;
      }
