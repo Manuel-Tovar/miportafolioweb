@@ -27,10 +27,11 @@ let certificadoMichiganSql = new Study ("Certificado por Michigan", "He recibido
 
 let certificadoScrum = new Study ("Certificado por CertiProf", "He recibido este certificado de Scrum gracias a la institucion CertiProf, realizando 2 horas de estudio.", "./images/scrum-foundation.jpg", "https://drive.google.com/file/d/1ZrhrWskLyowZqd5le66unYTDW_Qg2gT9/view?usp=sharing");
 
+let certificadoEgg = new Study ("Certificado por Egg", "He recibido este certificado de Programacion gracias a la institucion Egg, realizando 81 horas de estudio.", "/images/programacionEgg.PNG","https://drive.google.com/file/d/1G20s_yeIsdCxppLRtzm3YI2hQHoen0-h/view?usp=sharing");
 
 /* all information is inserted into the array */
 
-arraysStudy.push(certificadoMeta,certificadoJavaScript, certificadoReact, certificadoSoporteTecnico, certificadoMichiganSql, certificadoScrum)
+arraysStudy.push(certificadoEgg, certificadoMichiganSql, certificadoMeta,certificadoJavaScript, certificadoReact, certificadoScrum)
 
 
 /* function to print all the information in the array */
