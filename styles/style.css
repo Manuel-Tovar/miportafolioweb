@@ -474,7 +474,7 @@ button:active {
 }
 .project .project-img img, .project-two .project-img img{
     width: 100%;
-    height: 360px;
+    height: 100%;
     padding: 10px;
     border-radius: 30px;
 }
