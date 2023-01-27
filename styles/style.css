@@ -331,7 +331,6 @@ button:active {
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     width: 100%;
-
     background-color: var(--background1);   
 }
 
@@ -344,6 +343,7 @@ button:active {
     display: flex;
     justify-content: center;
     box-shadow: 0 0 20px 8px var(--colortext2);
+    position: relative;
 }
 
 /* ANIMATION STUDIES */
@@ -437,6 +437,7 @@ button:active {
 /* technology */ 
 .technology {
     background-color: var(--background2);
+    position: relative;
 }
 .technology h2 {
     color: var(--colortext2);
