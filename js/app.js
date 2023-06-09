@@ -1,56 +1,41 @@
-const studies = document.getElementById("studies");
-
-class Study {
-
-    constructor (title, description, photo,  link) {
-
-    this.photo = photo
-    this.title = title
-    this.description = description
-    this.link = link
-    }
-}
-
-let arraysStudy = [] 
-
-/* all the information of the studies is inserted */
-
-let certificadoMeta = new Study ("Certificado por Meta", "He recibido este certificado de Introduccion al Front-End Develoment por parte de la empresa META, gracias a la institucion Coursera, realizando 4 semanas de estudio.", "./images/meta_front-end.jpg", "https://drive.google.com/file/d/1fModQkKT1lvgxIxhoqjPxFQCJcHL8fYb/view?usp=sharing");
-
-let certificadoJavaScript = new Study ("Certificado por Sololearn", "He recibido este certificado de JavaScript gracias a la institucion Sololearn, realizando 6 semanas de estudio.", "./images/java-script.jpg", "https://drive.google.com/file/d/1Ira8EZcUl6wsMnPFLE_l8JkonrVFlI2t/view?usp=sharing")
-
-let certificadoReact = new Study ("Certificado por Sololearn", "He recibido este certificado de React + Redux gracias a la institucion Sololearn, realizando 2 semanas de estudio.", "./images/react-redux.jpg", "https://drive.google.com/file/d/1Mg07KB0c20-anJDYgp11013sKPwhGyfQ/view?usp=sharing")
-
-let certificadoSoporteTecnico = new Study ("Certificado por Google", "He recibido este certificado de Fundamentos de Soporte Tecnico por parte de la empresa Google, gracias a la institucion Coursera, realizando 4 semanas de estudio.", "./images/technical-support.jpg", "https://drive.google.com/file/d/11VOdFEsfYQ2LpAAaFgc5HoaSnA-smURr/view?usp=sharing");
-
-let certificadoMichiganSql = new Study ("Certificado por Michigan", "He recibido este certificado de Lenguaje de Consulta Estructurado por parte de la Univercidad de Michigan, gracias a la institucion Coursera, realizando 6 semanas de estudio.", "./images/sql-michigan.jpg", "https://drive.google.com/file/d/1_KLbr_C1ZnLtjzIpOCu2tu4PCc4c1XvQ/view?usp=sharing");
-
-let certificadoScrum = new Study ("Certificado por CertiProf", "He recibido este certificado de Scrum gracias a la institucion CertiProf, realizando 2 horas de estudio.", "./images/scrum-foundation.jpg", "https://drive.google.com/file/d/1ZrhrWskLyowZqd5le66unYTDW_Qg2gT9/view?usp=sharing");
-
-let certificadoEgg = new Study ("Certificado por Egg", "He recibido este certificado de Programacion gracias a la institucion Egg, realizando 81 horas de estudio.", "./images/programacionEgg.PNG","https://drive.google.com/file/d/1G20s_yeIsdCxppLRtzm3YI2hQHoen0-h/view?usp=sharing");
-
-/* all information is inserted into the array */
-
-arraysStudy.push(certificadoEgg, certificadoMichiganSql, certificadoMeta,certificadoJavaScript, certificadoReact, certificadoScrum)
-
-
-/* function to print all the information in the array */
-
-arraysStudy.forEach((prints) => {
-
-    toPrint = `
-    
-    <div class="card">
-    <a href= ${prints.link} target="_blank" ><div class="card-image"><img src=${prints.photo} alt="card" width="100%" height="100%" >
-    </div></a>
-        <div class="card-description">
-            <p class="text-title"> ${prints.title}</p>
-            <p class="text-body"> ${prints.description} </p>
-        </div>
-    </div>
-
-    `
- studies.innerHTML += toPrint
-
-});
-
+const seccionesPagina = new fullpage("#fullpage", {
+    // ──────────────────────────────────────────────────
+    //   :::::: Opciones Basicas
+    // ──────────────────────────────────────────────────
+    autoScrolling: true, // Se activa el scroll.
+    fitToSection: false, // Acomoda el scroll automaticamente para que la seccion se muestre en pantalla.
+    fitToSectionDelay: 300, // Delay antes de acomodar la seccion automaticamente.
+    easing: "easeInOutCubic", // Funcion de tiempo de la animacion.
+    scrollingSpeed: 700, // Velocidad del scroll. Valores: en milisegundos.
+    css3: true, // Si usara CSS3 o javascript.
+    easingcss3: "ease-out", // Curva de velocidad del efecto.
+    loopBottom: true,
+    // ──────────────────────────────────────────────────
+    //   :::::: Barra de navegación
+    // ──────────────────────────────────────────────────
+    navigation: true, // Muesta la barra de navegación.
+    menu: "#menu", // Menu de navegación.
+    anchors: ["inicio", "proyectos", "sobreMi", "contacto"], // Anclas, las usamos para identificar cada seccion y poder acceder a ellas con el menu.
+    navigationTooltips: ["Inicio", "Proyectos", "Sobre Mi", "Contacto"], // Tooltips que mostrara por cada boton.
+    showActiveTooltip: false, // Mostrar tooltip activa.
+    // ──────────────────────────────────────────────────
+    //   :::::: Secciones
+    // ──────────────────────────────────────────────────
+    sectionsColor: ["#000", "#c2c2c2", "#000", "#000713"], // Color de fondo de cada seccion.
+    verticalCentered: true, // Si alineara de forma vertical los contenidos de cada seccion.
+    // ──────────────────────────────────────────────────
+    //   :::::: Slides
+    // ──────────────────────────────────────────────────
+    controlArrows: true, // Flechas del slide
+    slidesNavigation: false, // Indicadores del slide
+    afterLoad: function (origin, destination) {
+      if (destination.anchor == "proyectos") {
+        document.querySelector("#slidePrincipal h2").style.opacity = 1;
+        document.querySelector("#slidePrincipal h4").style.opacity = 1;
+      }
+      if (destination.anchor == "contacto") {
+        document.querySelector(".footer h2").style.opacity = 1;
+      }
+    },
+  });
+  

@@ -1,0 +1,85 @@
+@media screen and (max-width: 900px) {
+
+.header .contenedor-titulo {
+    flex-direction: column;
+}
+
+.division-titulo {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+.header .titulo {
+    font-size: 60px;
+    
+}
+.header p {
+    font-size: 22px;
+
+}
+
+#slidePrincipal h2 {
+    font-size: 3.5em;
+}
+
+#slidePrincipal h4 {
+    font-size: 1.2em;
+}
+
+/* ------------------------- */
+    /* Proyectos */
+    /* ------------------------- */
+  
+
+    .imgProyecto {
+        width: 90%;
+        
+        margin-bottom: -20px;
+        
+    }
+
+    .btnVer {
+        font-weight: 700;
+        transition: 0;
+        box-shadow: transparent;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0));
+    }
+
+    .btnVer:active {
+        scale: 0;
+    }
+
+    .textProyecto {
+        width: 90%;
+    }
+
+    .textProyecto h2 {
+        font-size: 32px;
+        margin-bottom: 50px;
+        
+    }
+
+    .textProyecto h6 {
+        font-size: .8em;
+        
+    }
+
+    #slidePrincipal{
+        margin-top: 100%;
+    }
+
+    #slideTwo,
+    #slideTree,
+    #slideFor {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        
+    }
+
+
+
+
+
+
+}

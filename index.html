@@ -1,300 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Portafolio Manuel</title>
-    
-</head>
-<body>
-    <!-- HEADER -->
-    <header id="header-nav" class="header">
-        <!-- ANIMATION 1 -->
-        <div class="wrapper">
-            <div class="header-content">
-                <div class="loader">
-                    <div class="face">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="face">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            <!-- LOGO 1 -->
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAALZJREFUSEvtlMENgDAMA80msAlsApPAJrAJqzAKCioSgrguSBWf9tNHI1/iNKmQ+VSZ9VEA0uHfLaoBtAAWkuoU3jZWSqwCE58DYHAgJj4CMPEu3A8OA1zFTaBxMrSYFYDdFOIBUsRPnoTcAW/EkyBXwBdxCbkDpKfkt9DkPIveQqKVsyanQqStsW+qIFLc7FSDdkK8QevDILI5OdqldlHKqrCJpkcB5LZUAQWgHJJNlgIqIHsPdt9sNhnf01JXAAAAAElFTkSuQmCC" alt="logo-one"/>
-            <!-- NAVIGATION -->
-            <nav class="menu" aria-label="main-navigation">
-                <ul>
-                    <li>
-                        <a class="is-active" href="#profile-nav">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="#studies-nav">Estudios</a>
-                    </li>
-                    <li>
-                        <a href="#technology-nav">Tecnologias</a>
-                    </li>
-                    <li>
-                        <a href="#project-nav">Proyectos</a>
-                    </li>
-                    <li>
-                        <a href="#my-information-nav">Mas Sobre Mi</a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- LOGO 2 -->
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARtJREFUSEu1ldENwjAMRF83gU1gEmASYBLYBDaBTUBX1SgKTupaar9Qk/r57uIwsPIzrFyfLGADvCPNZQAq/gKewH4OkgEcgduagAtwBq6AfnefjIIHsJvskU1pgLxWoXtRwfzXK2tOKrTHDb2lQIXVqZ7SCgOo2BawPLRPgf8p8gDmsT6qT4rnvwIXqG5mfFEDzF9386RK6uqABT4AUii7tD5aVgLK4q5c4DN16ikXWGoMcqoBGh4ttvys/a9PT5mbZfRnUc/P3oA1c2uF7PnZGrBubr1jan5aHt6ApY6peSvPVUCdewNm+7RHnrtTHb0q5gJuXhdRwKILrqRFAeZ/6AbNAGxGog39GEs+CP9NZhT0L/3O6hIFKcgXbmJKGRWkFLIAAAAASUVORK5CYII=" alt="logo-two" />
-            <!-- BUTTON MI CV -->
-            <a href="https://drive.google.com/file/d/19DwE-oQbmx7pLdlfwE4nC1wIVpSFZKHU/view?usp=sharing" target="_blank" >
-                <button >
-                    <div class="svg-wrapper-1">
-                        <div class="svg-wrapper">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                            <path fill="none" d="M0 0h24v24H0z"></path>
-                            <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <span> Mi CV </span>
-                </button>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Desarrollador Web</title>
+    <script
+      src="https://kit.fontawesome.com/2c36e9b7b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.css"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/mediaquery.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="#inicio" class="marca">Manuel Tovar</a>
+      <ul id="menu" class="menu">
+        <li data-menuanchor="inicio" class="active">
+          <a href="#inicio">Inicio</a>
+        </li>
+        <li data-menuanchor="proyectos">
+          <a href="#proyectos">Proyectos</a>
+        </li>
+        <li data-menuanchor="contacto">
+          <a href="#contacto">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="fullpage">
+      <header class="section header">
+        <div class="contenedor-titulo">
+          <div class="division-titulo">
+            <h1 class="titulo">
+              <span class="texto-naranja">Front</span>
+              <span class="texto-blanco">End</span>
+            </h1>
+            <p class="texto-blanco">
+              Soy Manuel Tovar Web Developer, que le encanta implementar diseños
+              que inspiran y atraen a las personas.
+            </p>
+          </div>
+
+          <div class="redesSociales">
+            <div class="main">
+              <div class="up">
+                <a href="https://www.instagram.com/manueldjtm" target="_blank">
+                  <button class="card1">
+                    <img
+                      src="./media/iconos/instagram.png"
+                      alt="instagram"
+                    /></button
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/manuel-tovar-x/"
+                  target="_blank"
+                  ><button class="card2">
+                    <img
+                      src="./media/iconos/linkedin.png"
+                      alt="linkedin"
+                    /></button
+                ></a>
+              </div>
+              <div class="down">
+                <a
+                  href="https://www.facebook.com/manuel.tovar.x"
+                  target="_blank"
+                  ><button class="card3">
+                    <img
+                      src="./media/iconos/facebook.png"
+                      alt="facebook"
+                    /></button
+                ></a>
+                <a href="https://github.com/Manuel-Tovar" target="_blank"
+                  ><button class="card4">
+                    <img src="./media/iconos/github.png" alt="github" /></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contenedor-icono">
+          <p>
+            <a href="#proyectos" class="texto-blanco"
+              ><i class="fas fa-chevron-down"></i
+            ></a>
+          </p>
+        </div>
+      </header>
+
+      <section class="section proyectos">
+        <article class="slide">
+          <div id="slidePrincipal">
+            <h2>Proyectos</h2>
+            <h4>Con mas de 1 año de experiencia desarrollando paginas web</h4>
+          </div>
+        </article>
+        <article class="slide">
+          <div class="informacion-producto">
+            <div id="slideTwo">
+              <div class="imgProyecto">
+                <img src="./media/proyectos/restaurantechino.PNG" />
+              </div>
+              <div class="textProyecto">
+                <h2>Restaurante Bong Kong</h2>
+                <h6>
+                  Desarrollo de una página web para un restaurante chino que
+                  incluye un carrito de compra para realizar pedidos,
+                  Integración de una pasarela de pago para que los clientes
+                  puedan realizar pagos en línea de manera segura y sencilla.
+                  Desarrollo de un panel de administración para que los dueños
+                  del restaurante puedan recibir todas las órdenes, gestionar
+                  los pedidos y mantener el control sobre las ventas.
+                </h6>
+                <a
+                  href="https://restaurantebongkong.com"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button class="btnVer">Ver ahora</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="slide">
+          <div id="slideTree">
+            <div class="imgProyecto">
+              <img src="./media/proyectos/aplicacion-pelicula.PNG" />
+            </div>
+            <div class="textProyecto">
+              <h2>Pagina de Peliculas</h2>
+              <h6>
+                Este proyecto fue realizado con el fin de poner en práctica los
+                conocimientos adquiridos en la manipulación de API pública, en
+                él encontrarás una sección de búsquedas y cambiar de página, al
+                dar clic en algún post de película te mostrará la descripción,
+                título, valoración, fecha de lanzamiento, géneros, trailer y
+                duración de la película.
+              </h6>
+              <a
+                href="https://manuel-tovar.github.io/aplicacion-pelicula/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button class="btnVer">Ver ahora</button>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="section sobreMi">
+        <div class="about">
+          <div class="about-texto">
+            <h1>Desarrollador Web</h1>
+
+            <p>
+              Empecé mi carrera como desarrollador web front-end después de
+              estudiar por mi cuenta y tomar algunos cursos en línea para
+              mejorar mis habilidades. Desde entonces, he trabajado en varios
+              proyectos interesantes que me han permitido aprender y mejorar
+              cada día más.
+            </p>
+            <p>
+              Algunas de mis habilidades incluyen HTML, CSS, JavaScript, React,
+              Sql, Java, Git, Bootstrap, y disfruto trabajar en proyectos
+              desafiantes y creativos. También me enfoco en el cliente y en
+              asegurarme de que los diseños que creo sean intuitivos y fáciles
+              de usar.
+            </p>
+            <p>
+              Si estás buscando un desarrollador web front-end confiable y
+              apasionado, ¡no dudes en contactarme! Estoy emocionado de trabajar
+              contigo y crear diseños web impresionantes juntos.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="section footer">
+        <h2 class="texto-naranja">Contacto</h2>
+        <div class="contenedor-footer">
+          <div class="lista-contacto">
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/19DwE-oQbmx7pLdlfwE4nC1wIVpSFZKHU/view?usp=sharing"
+            >
+              Curriculum
             </a>
-            <!-- ANIMATION 2 -->
-            <div class="header-content">
-                <div class="loader">
-                    <div class="face">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="face">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>    
+          </div>
+          <div class="lista-contacto">
+            <a
+              href="https://api.whatsapp.com/send?phone=573229228660&text=Hola!%20Manuel%0A%0AQuiero%20contactarme%20contigo"
+            >
+              tovarmanuel569@gmail.com
+            </a>
+          </div>
+          <div class="lista-contacto">
+            <a
+              href="https://api.whatsapp.com/send?phone=573229228660&text=Hola!%20Manuel%0A%0AQuiero%20contactarme%20contigo"
+            >
+              +57 322 922 8660
+            </a>
+          </div>
         </div>
-    </header>
-    <!-- PROFILE  -->
-    <section id="profile-nav" class="profile">
-        <!-- TERMINAL ANIMATION -->
-        <div class="profile-description">
-            <div class="profile_terminal"></div>
-                <div class="terminal_toolbar">
-                    <div class="butt">
-                        <button class="btn btn-color"></button>
-                        <button class="btn"></button>
-                        <button class="btn"></button>
-                    </div>
-                    <p class="user">manuel@admin: ~</p>
-                </div>
-                <div class="terminal_body">
-                    <div class="terminal_promt">
-                        <span class="terminal_user">C:\Users\manuel\tovar</span>
-                        <span class="terminal_location">~</span>
-                        <span class="terminal_bling">$ cd mi_portafolio</span>
-                        <span class="terminal_cursor"></span>
-                    </div>
-                </div>
-            </div>
-            <!-- TEXT PROFILE -->
-            <div class="profile-text">
-                <h1>
-                    <span class="text-span">¡Hello World!</span>
-                    <span class="text-name">Soy Manuel Tovar </span>
-                </h1>
-                <p> Frontend Developer que le encanta implementar diseños que inspiran y atraen a las personas.</p>
-                <!-- icon social -->
-                <div class="social">
-                   <a href="https://github.com/Manuel-Tovar" target="_blank" ><svg height="50" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="50" data-view-component="true" fill="#395B64" >
-                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                    </svg>
-                    </a> 
-                    <a href="https://www.linkedin.com/in/manuel-tovar-x/" target="_blank" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="25x25" fill="#395B64" width="50" height="50" >
-                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
-                      </svg>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- STUDIES -->
+      </footer>
+    </main>
 
-    <!-- ANIMATION STUDIES -->
-    <div id="studies-nav" class="title-studies">
-        <div class="spinner">
-            <span>E</span>
-            <span>S</span>
-            <span>T</span>
-            <span>U</span>
-            <span>D</span>
-            <span>I</span>
-            <span>O</span>
-            <span>S</span>
-        </div>
-    </div>
-
-    
-    <section id="studies" >
-           
-     <!-- here all the studies are printed -->
-      
-    </section>
-  
-    <!-- TECHNOLOGY ANIMATION  -->
-    <div id="tecnology-nav" class="tecnology-studies">
-        <div class="spinner">
-            <span>T</span>
-            <span>E</span>
-            <span>C</span>
-            <span>N</span>
-            <span>O</span>
-            <span>L</span>
-            <span>O</span>
-            <span>G</span>
-            <span>I</span>
-            <span>A</span>
-            <span>S</span>
-        </div>
-    </div>
-    <!-- TECHNOLOGY -->
-    <section id="technology-nav" class="technology">
-        <div class="row1-container">
-            <div class="box box-down cyan">
-              <h2>Github</h2>
-              <p>Manejo de Git y Github basico</p>
-              <img src="./images/icons/github.png" width="100%" alt="github">
-            </div>
-            <div class="box red">
-              <h2>JavaScript</h2>
-              <p>Manejo de JavaScript esencial </p>
-              <img src="./images/icons/javascript.png" width="100%" alt="javascript">
-            </div>
-            <div class="box box-down blue">
-              <h2>React</h2>
-              <p>Manejo de React basico</p>
-              <img src="./images/icons/react.png" width="100%" alt="react">
-            </div>
-        </div>
-        <div class="row2-container " >
-            <div class="box orange">
-              <h2>MySql</h2>
-              <p>Manejo de MySql, query esencia </p>
-              <img src="./images/icons/mysql.png" width="100%" alt="mysql"> 
-            </div>
-        </div>
-    </section>
-    <!-- PROJECT ANIMATION -->
-    <div id="project-nav" class="project-studies">
-        <div class="spinner">
-            <span>P</span>
-            <span>R</span>
-            <span>O</span>
-            <span>Y</span>
-            <span>E</span>
-            <span>C</span>
-            <span>T</span>
-            <span>O</span>
-            <span>S</span>
-        </div>
-    </div>
-    <!-- PROJECT  -->
-    <section id=" project-two-nav" class="project-two">
-
-        <div class="project-img">
-            <a href="https://restaurantebongkong.com/" target="_blank" ><img src="./images/restaurantechino.PNG" alt="project-img"></a>
-        </div>
-        <div class="project-text" >
-            <h2>Restaurante Chino Bong Kong</h2>
-            <p>Desarrollo de una página web para un restaurante chino que incluye un carrito de compra para realizar pedidos en línea, así como una función de compra por WhatsApp para clientes que prefieren este método de pago.
-                Integración de una pasarela de pago para que los clientes puedan realizar pagos en línea de manera segura y sencilla.</p>
-               <p> Desarrollo de un panel de administración para que los dueños del restaurante puedan obtener todas las órdenes que llegan al restaurante, gestionar los pedidos y mantener el control sobre las ventas. </p>
-            <div class="button-project">
-                <a href="https://restaurantebongkong.com/" target="_blank" > 
-                    <button class="cssbuttons-io">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="project-nav" class="project">
-        <div class="project-img">
-            <a href="https://manuel-tovar.github.io/aplicacion-pelicula/" target="_blank"> <img src="./images/aplicacion-pelicula.PNG" alt="project-img"></a>
-        </div>
-        <div class="project-text" >
-            <h2>Pagina de Peliculas</h2>
-            <p>Este proyecto fue realizado con el fin de poner en práctica los conocimientos adquiridos en la manipulación de API pública, en él encontrarás una sección de búsquedas y cambiar de página, al dar clic en algún post de película te mostrará la descripción, título, valoración, fecha de lanzamiento, géneros, trailer y duración de la película.</p>
-            <div class="button-project">
-                <a href="https://github.com/Manuel-Tovar/aplicacion-pelicula" target="_blank">  
-                    <button class="cssbuttons-io">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
-                    </button>
-                </a>    
-            </div>
-        </div>
-    </section>
-    <section id="project-nav" class="project-two">
-
-        <div class="project-img">
-            <a href="https://manuel-tovar.github.io/encriptador/" target="_blank" ><img src="./images/encriptador.PNG" alt="project-img"></a>
-        </div>
-        <div class="project-text" >
-            <h2>Encriptador de Texto</h2>
-            <p> Proyecto ONE de Oracle + Alura LATAM. <br> <br> El desafio consiste en construir una pagina web que encripte y desencripte texto que sera ingresado por el usuario y presentarlo en su forma encriptada o desencriptada, el objetivo de este desafio es poner a prueba los conocimientos adquiridos durante el curso "Principiante en programación"</p>
-            <div class="button-project">
-                <a href="https://github.com/Manuel-Tovar/encriptador" target="_blank" > 
-                    <button class="cssbuttons-io">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </section>
-    <section id="project-two-nav" class="project">
-        <div class="project-img">
-            <a href="https://manuel-tovar.github.io/clon-google/" target="_blank"> <img src="./images/clon-google.jpg" alt="project-img"></a>
-        </div>
-        <div class="project-text" >
-            <h2>Clon de Google</h2>
-            <p>Este proyecto es un clon de Google el cual su finalidad es poner en practica los conocimientos de HTML y CCS.</p>
-            <div class="button-project">
-                <a href="https://github.com/Manuel-Tovar/clon-google" target="_blank">  
-                    <button class="cssbuttons-io">
-                        <span><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z" fill="currentColor"></path></svg> Code</span>
-                    </button>
-                </a>    
-            </div>
-        </div>
-    </section>
-   
-    <!-- My information  -->
-    <section id="my-information-nav" class="my-information" >
-      
-        <div class="my-information-img">
-            <img src="images/yo.jpg" alt="my-information-img"  >
-        </div>
-        <div class="my-information-text" >
-            <h2>Un Poco mas sobre mi</h2>
-            <p> Soy apasionado por la tecnología, por el desarrollo de software y la resolución de problemas informáticos. <br>
-                Actualmente me encuentro estudiando desarrollo full Stack, tengo conocimientos básicos en Testing de Software Manual.<br>
-                Gracias por haber llegado al final de mi portafolio, si deseas contactarte conmigo puedes darle click al botón Mi CV.</p>
-        </div>
-
-    </section>
-
-    <footer>
-        <div id="footer" class="tecnology-studies">
-            <div class="spinner">
-                <span>G</span>
-                <span>R</span>
-                <span>A</span>
-                <span>C</span>
-                <span>I</span>
-                <span>A</span>
-                <span>S</span>
-            </div>
-        </div>
-    </footer>
-    <script src="js/app.js" ></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
