@@ -1,3 +1,13 @@
+// ──────────────────────────────────────────────────
+//   :::::: Loader
+// ──────────────────────────────────────────────────
+
+setTimeout(function () {
+    $(".loading").fadeOut("slow");
+}, 5000);
+
+// ──────────────────────────────────────────────────
+
 const seccionesPagina = new fullpage("#fullpage", {
   // ──────────────────────────────────────────────────
   //   :::::: Opciones Basicas
@@ -27,9 +37,11 @@ const seccionesPagina = new fullpage("#fullpage", {
   // ──────────────────────────────────────────────────
   controlArrows: true, // Flechas del slide
   slidesNavigation: false, // Indicadores del slide
+   // ──────────────────────────────────────────────────
+  //   :::::: Carga animaciones
+  // ──────────────────────────────────────────────────
   afterLoad: function (origin, destination) {
     if (destination.anchor == "proyectos") {
-      document.querySelector("#slidePrincipal h2").style.opacity = 1;
       document.querySelector("#slidePrincipal h4").style.opacity = 1;
     }
     if (destination.anchor == "contacto") {
@@ -37,3 +49,5 @@ const seccionesPagina = new fullpage("#fullpage", {
     }
   },
 });
+
+// ──────────────────────────────────────────────────

@@ -1,42 +1,44 @@
 @media screen and (max-width: 900px) {
 
-.header .contenedor-titulo {
-    flex-direction: column;
-}
+    .header .contenedor-titulo {
+        flex-direction: column;
+    }
 
-.division-titulo {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+    .division-titulo {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
 
-}
-.header .titulo {
-    font-size: 60px;
-    
-}
-.header p {
-    font-size: 22px;
+    }
 
-}
+    .header .titulo {
+        font-size: 60px;
 
-#slidePrincipal h2 {
-    font-size: 3.5em;
-}
+    }
 
-#slidePrincipal h4 {
-    font-size: 1.2em;
-}
+    .header p {
+        font-size: 22px;
 
-/* ------------------------- */
+    }
+
+    #slidePrincipal h2 {
+        font-size: 3.5em;
+    }
+
+    #slidePrincipal h4 {
+        font-size: 1.2em;
+    }
+
+    /* ------------------------- */
     /* Proyectos */
     /* ------------------------- */
-  
+
 
     .imgProyecto {
         width: 90%;
-        
+
         margin-bottom: -20px;
-        
+
     }
 
     .btnVer {
@@ -57,15 +59,15 @@
     .textProyecto h2 {
         font-size: 32px;
         margin-bottom: 50px;
-        
+
     }
 
     .textProyecto h6 {
         font-size: .8em;
-        
+
     }
 
-    #slidePrincipal{
+    #slidePrincipal {
         margin-top: 100%;
     }
 
@@ -74,12 +76,89 @@
     #slideFor {
         flex-direction: column-reverse;
         justify-content: space-evenly;
-        
+
+    }
+
+}
+
+
+/* ------------------------- */
+/* Mediaqueries */
+/* ------------------------- */
+
+
+
+@media screen and (max-width: 920px) {
+    .about-texto {
+        margin: 50px 2px 2px 2px;
+
+    }
+
+    .about-texto h1 {
+        font-size: 5vh;
+
+    }
+
+    .about-texto p {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu li a,
+    .menu li.active a {
+        font-size: 18px;
+    }
+
+    .contenedor-footer a {
+        font-size: 20px;
+        margin-top: 10px;
     }
 
 
+    .footer .texto-naranja {
+        font-size: 40px;
+    }
+}
 
+@media screen and (max-width: 576px) {
 
+    .fp-controlArrow.fp-next {
+        left: 100px;
+    }
 
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav {
+        display: block;
+        text-align: center;
+    }
+
+    .nav a {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu li a,
+    .menu li.active a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .titulo {
+        font-size: 45px;
+    }
 
 }
