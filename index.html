@@ -22,7 +22,19 @@
   </head>
   <body>
     <div class="loading show">
-        <div class="spin"></div>
+      <div class="spinnerContainer">
+        <div class="spinner"></div>
+        <div class="loader">
+          <p>cargando</p>
+          <div class="words">
+            <span class="word">javascript</span>
+            <span class="word">imagen</span>
+            <span class="word">librerias</span>
+            <span class="word">css</span>
+            <span class="word">javascript</span>
+          </div>
+        </div>
+      </div>
     </div>
     <nav class="nav">
       <a href="#inicio" class="marca">Manuel Tovar</a>
@@ -220,10 +232,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.js"></script>
     <script src="js/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script type="text/javascript">
-$(window).load(function() {
-    $(".loading").fadeOut("slow");
-});
-</script>
+    <script type="text/javascript">
+      setTimeout(function () {
+        $(".loading").fadeOut("slow");
+      }, 5000);
+    </script>
   </body>
 </html>

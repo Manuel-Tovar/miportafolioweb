@@ -4,16 +4,22 @@
 
 * {
     box-sizing: border-box;
-    margin: 0; padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
-body { 
+body {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
     margin-bottom: 0;
 }
 
@@ -32,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .texto-negro {
-	color: #000;
+    color: #000;
 }
 
 .loading {
@@ -41,7 +47,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: white;
+    background-color: rgb(210, 213, 218);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,22 +55,116 @@ h1, h2, h3, h4, h5, h6 {
     transition: 1s all;
     opacity: 0;
 }
+
 .loading.show {
     opacity: 1;
 }
-.loading .spin {
-    border: 3px solid hsla(185, 100%, 62%, 0.2);
-    border-top-color: #3cefff;
-    border-radius: 50%;
-    width: 3em;
-    height: 3em;
-    animation: spin 1s linear infinite;
+
+.spinnerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}            
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: orange;
+    animation: tri-spinner 1s infinite linear;
+}
+
+.spinner::before,
+.spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: tri-spinner 2s infinite;
+}
+
+.spinner::after {
+    margin: 8px;
+    animation-duration: 3s;
+}
+
+@keyframes tri-spinner {
+    100% {
+        transform: rotate(1turn);
+    }
+}
+
+.loader {
+    color: #4a4a4a;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 40px;
+    padding: 30px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 8px;
+}
+
+.words {
+    overflow: hidden;
+}
+
+.word {
+    display: block;
+    height: 100%;
+    padding-left: 6px;
+    color: #299fff;
+    animation: cycle-words 5s infinite;
+}
+
+@keyframes cycle-words {
+    10% {
+        -webkit-transform: translateY(-105%);
+        transform: translateY(-105%);
+    }
+
+    25% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    35% {
+        -webkit-transform: translateY(-205%);
+        transform: translateY(-205%);
+    }
+
+    50% {
+        -webkit-transform: translateY(-200%);
+        transform: translateY(-200%);
+    }
+
+    60% {
+        -webkit-transform: translateY(-305%);
+        transform: translateY(-305%);
+    }
+
+    75% {
+        -webkit-transform: translateY(-300%);
+        transform: translateY(-300%);
+    }
+
+    85% {
+        -webkit-transform: translateY(-405%);
+        transform: translateY(-405%);
+    }
+
+    100% {
+        -webkit-transform: translateY(-400%);
+        transform: translateY(-400%);
+    }
+}
 
 
 /* ------------------------- */
@@ -154,11 +254,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 80px;
     text-transform: uppercase;
 }
+
 .header p {
     font-size: 28px;
 }
 
-.division-titulo{
+.division-titulo {
     display: flex;
     width: 50%;
     margin-left: auto;
@@ -179,9 +280,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Animaciones */
 /* ------------------------- */
 @keyframes bajar-subir {
-    0% { transform: translateY(20px); }
-    25% { transform: translateY(0); }
-    100% { transform: translateY(20px); }
+    0% {
+        transform: translateY(20px);
+    }
+
+    25% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 /* ------------------------- */
@@ -193,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     margin: auto;
     justify-content: center;
-    
+
 
 }
 
@@ -332,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 /* ------------------------- */
 
 
-.proyectos article { 
+.proyectos article {
     background-position: center;
     background-size: cover;
 }
@@ -345,6 +454,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 1;
 }
+
 .proyectos article:nth-child(1)::before {
     content: "";
     position: absolute;
@@ -402,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    
+
 }
 
 #slideTwo,
@@ -426,8 +536,9 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     z-index: -1;
-    
+
 }
+
 .imgProyecto {
     display: flex;
     justify-content: center;
@@ -531,6 +642,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 0.3rem 0.9rem rgba(7, 7, 7, 0.521);
     color: #E7F6F2;
 }
+
 /* ------------------------- */
 /* Clases de fullpage.js - Flechas de Slide */
 /* ------------------------- */
@@ -619,12 +731,12 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 920px) {
     .about-texto {
         margin: 50px 2px 2px 2px;
-        
+
     }
 
     .about-texto h1 {
         font-size: 5vh;
-        
+
     }
 
     .about-texto p {
@@ -682,16 +794,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Mediaqueries */
 /* ------------------------- */
 @media screen and (max-width: 768px) {
+
     .menu li a,
     .menu li.active a {
         font-size: 18px;
     }
-   
+
     .contenedor-footer a {
         font-size: 20px;
         margin-top: 10px;
     }
-    
+
 
     .footer .texto-naranja {
         font-size: 40px;
@@ -699,7 +812,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 576px) {
-   
+
     .fp-controlArrow.fp-next {
         left: 100px;
     }
